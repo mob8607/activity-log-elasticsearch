@@ -1,0 +1,33 @@
+{
+    "name": "sulu/activity-log-elasticsearch",
+    "description": "Sulu Activity Log storage implementation for elasticsearch",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "sulu/activity-log": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8 || ^5.7"
+    },
+    "keywords": [
+        "elasticsearch"
+    ],
+    "authors": [
+        {
+            "name": "Sulu activity-log-elasticsearch",
+            "homepage": "https://github.com/sulu/activity-log-elasticsearch/contributors"
+        }
+    ],
+    "homepage": "https://github.com/sulu/activity-log-elasticsearch",
+    "autoload": {
+        "psr-4": {
+            "Sulu\\Component\\ActivityLog\\Storage\\Elasticsearch\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sulu\\Component\\ActivityLog\\Storage\\Elasticsearch\\Tests\\": "tests"
+        }
+    }
+}
