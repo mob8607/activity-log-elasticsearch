@@ -14,3 +14,7 @@
 
 # System files
 .DS_Store
+
+# tests
+tests/app/cache
+tests/app/logs

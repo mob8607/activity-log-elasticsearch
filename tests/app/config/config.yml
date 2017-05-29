@@ -1,0 +1,15 @@
+ongr_elasticsearch:
+    managers:
+        default:
+            index:
+                index_name: activity_log_elasticsearch
+            mappings:
+                - ElasticsearchActivityLogBundle
+        live:
+            index:
+                index_name: activity_log_elasticsearch_live
+            mappings:
+                - ElasticsearchActivityLogBundle
+
+parameters:
+    kernel.secret: "abcdef_someone_thinks_this_is_not_a_good_secret"

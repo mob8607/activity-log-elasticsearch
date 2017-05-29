@@ -15,5 +15,9 @@
             </exclude>
         </whitelist>
     </filter>
+
+    <php>
+        <server name="KERNEL_DIR" value="tests/app"/>
+    </php>
 </phpunit>
 

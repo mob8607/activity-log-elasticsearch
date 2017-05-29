@@ -4,8 +4,11 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": "^5.5 || ^7.0",
-        "sulu/activity-log": "dev-master"
+        "php": "^5.6 || ^7.0",
+        "sulu/activity-log": "dev-master",
+        "ongr/elasticsearch-bundle": "^5.0.2",
+        "ongr/elasticsearch-dsl": "^5.0.2",
+        "jms/serializer": "^1.5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8 || ^5.7"
@@ -22,12 +25,12 @@
     "homepage": "https://github.com/sulu/activity-log-elasticsearch",
     "autoload": {
         "psr-4": {
-            "Sulu\\Component\\ActivityLog\\Storage\\Elasticsearch\\": "src"
+            "Sulu\\Bundle\\ElasticsearchActivityLogBundle\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sulu\\Component\\ActivityLog\\Storage\\Elasticsearch\\Tests\\": "tests"
+            "Sulu\\Bundle\\ElasticsearchActivityLogBundle\\Tests\\": "tests"
         }
     }
 }
